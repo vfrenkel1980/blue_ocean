@@ -9,7 +9,7 @@ pipeline {
 
     stage('build') {
       steps {
-        bat 'mvn clean install -Dsurefire.suiteXmlFiles=%run_xml%  -Dlog4j.configurationFile=src//main//resources//log4J2.xml -B'
+        bat 'mvn clean install -Dsurefire.suiteXmlFiles=testng_mobile.xml  -Dlog4j.configurationFile=src//main//resources//log4J2.xml -B'
       }
     }
 
